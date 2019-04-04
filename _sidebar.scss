@@ -1,0 +1,47 @@
+$sidebar-hover-background: $allbiz-yellow;
+$sidebar-hover-color: black;
+
+#sidebar-left {
+  @media screen and (max-width: 768px) {
+    color: $navbar-color;
+    background-color: $navbar-background;
+  }
+}
+
+#verticalmenu_sidebar {
+  .panel-heading {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    color: $navbar-color;
+    background-color: transparent;
+  }
+}
+
+
+#cssmenu {
+  > ul { 
+    li a {
+      background-color: transparent;
+      letter-spacing: 1px;
+      font-weight: normal;
+
+      &:hover {
+        color: $sidebar-hover-color;
+        background: none $sidebar-hover-background;
+      }
+    }
+
+    li a:hover,
+    li:hover a {
+      color: $sidebar-hover-color;
+      background: none $sidebar-hover-background;
+    }
+
+    > li > ul {
+      color: $sidebar-hover-color;
+      background: none $sidebar-hover-background;
+    }
+  }
+}

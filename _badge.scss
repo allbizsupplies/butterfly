@@ -1,0 +1,9 @@
+
+$badge-background: $allbiz-yellow;
+$badge-color: black;
+
+.badge {
+  color: $badge-color;
+  background: none $badge-background;
+  border-radius: 4px;
+}

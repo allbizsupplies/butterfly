@@ -1,0 +1,30 @@
+
+
+$templatelist-link-color: #fa8260;
+$templatelist-link-hover-color: #f84816;
+
+#templatelist {
+  #accordion {
+    .panel-heading {
+      a {
+        color: $templatelist-link-color;
+
+        &:hover,
+        &:focus {
+          color: $templatelist-link-hover-color;
+        }
+      }
+    }
+  }
+
+  .panel-title {
+    > a {
+      color: $templatelist-link-color;
+
+      &:hover,
+      &:focus {
+        color: $templatelist-link-hover-color;
+      }
+    }
+  }
+}

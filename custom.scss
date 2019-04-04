@@ -1,0 +1,25 @@
+
+$allbiz-yellow:   #FFD400;
+$allbiz-blue:     #0075BF;
+$allbiz-red:      #E31F28;
+$allbiz-black:    #000000;
+$allbiz-silver:   #e0e4ee;
+$allbiz-mdgrey:   #5d5f6b;
+$allbiz-dkgrey:   rgb(57, 57, 61);
+$allbiz-charcoal: #1a1a1a;
+$allbiz-blue-grey: #1e282f;
+
+$oc-red:    rgb(218, 41,  28);
+$oc-yellow: rgb(246, 190, 0);
+$oc-black:  rgb(35,  31,  32);
+
+$primary-color: #d4027f;
+
+@import 
+  "base",
+  "header",
+  "sidebar",
+  "main-content",
+  "templatelist",
+  "badge",
+  "hacks";

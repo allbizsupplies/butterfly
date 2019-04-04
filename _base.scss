@@ -1,0 +1,14 @@
+
+
+$base-background: #f6f6f6; // unused
+$base-color: #444444; // unused
+$base-link-color: #666666; // unused
+$base-link-hover-color: $primary-color;
+
+
+a {
+  &:hover,
+  &:focus {
+    color: $base-link-hover-color;
+  }
+}

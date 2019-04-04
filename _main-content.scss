@@ -1,0 +1,37 @@
+
+#cms_page {
+  a:not([href]) {
+    &,
+    &:hover,
+    &:focus {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  table {
+    border-color: rgba(black, 0.24);
+    margin: 0 0 10px;
+    
+    thead {
+      th {
+        text-align: center;
+      }
+    }
+
+    tbody {
+      tr:nth-child(odd) {
+        background: rgba(black, 0.06);
+      }
+  
+      td {
+        text-align: center;
+      }
+    }
+
+    th, td {
+      border: none;
+      padding: 0.5em 1em;
+    }
+  }
+}
