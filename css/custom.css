@@ -138,6 +138,10 @@ a:hover, a:focus {
 
 #cms_page h2 {
   margin-top: 30px; }
+  #cms_page h2 span + a {
+    font-size: 50%;
+    margin-left: 1em;
+    text-transform: uppercase; }
 
 #cms_page h3 {
   margin-top: 20px; }
