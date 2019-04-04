@@ -5,5 +5,9 @@
   "license": "MIT",
   "devDependencies": {
     "node-sass-chokidar": "^1.3.4"
+  },
+  "scripts": {
+    "build": "node-sass-chokidar ./sass -o ./css",
+    "watch": "node-sass-chokidar --watch ./sass -o ./css"
   }
 }
