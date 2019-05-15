@@ -6,3 +6,10 @@
     }
   }
 }
+
+// Pverride an override in theme.css
+.active {
+  a:not(.pull-right) {
+    color: #d4027f;
+  }
+}

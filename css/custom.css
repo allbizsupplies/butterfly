@@ -1,6 +1,9 @@
 a:hover, a:focus {
   color: #d4027f; }
 
+.active a:not(.pull-right) {
+  color: #d4027f; }
+
 .top-links a {
   color: white; }
   .top-links a:hover {
@@ -179,3 +182,6 @@ a:hover, a:focus {
 
 #product-info div[itemprop="description"] img {
   display: none; }
+
+.active a:not(.pull-right) {
+  color: #d4027f; }
