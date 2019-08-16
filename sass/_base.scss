@@ -1,21 +1,54 @@
 
-
-$base-background: #f6f6f6; // unused
-$base-color: #444444; // unused
-$base-link-color: #666666; // unused
-$base-link-hover-color: $primary-color;
-
-
 a {
+  color: $default-link-color;
+
   &:hover,
   &:focus {
-    color: $base-link-hover-color;
+    color: $default-link-hover-color;
   }
 }
 
-// Hack to override an override.
-.active {
-  a:not(.pull-right) {
-    color: #d4027f;
+
+$default-font-family: Calibri, 'Droid Sans', Tahoma, Geneva, sans-serif;
+
+body {
+  font-family: $default-font-family;
+
+  &:not(.cke_editable) {
+    background: $default-background;
+    color: $default-color;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: none
+}
+
+.top-links {
+  a, a:hover {
+    font-family: inherit;
+  }
+}
+
+.topnav {
+  .navbar-nav {
+    > li {
+      > a {
+        span {
+          font-family: inherit;
+        }
+      }
+    }  
+  }
+}
+
+.hover-box-shadow {
+  .btn-info {
+    font-family: inherit;
   }
 }

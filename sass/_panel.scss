@@ -1,0 +1,15 @@
+
+$panel-background: $allbiz-yellow;
+$panel-color: black;
+
+
+.panel-default {
+  > .panel-heading {
+    background: $panel-background;
+    color: $panel-color;
+
+    a, a:hover {
+      color: inherit;
+    }
+  }
+}

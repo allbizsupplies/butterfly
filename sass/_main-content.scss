@@ -1,4 +1,10 @@
 
+
+.body-container {
+  margin-top: 30px;
+}
+
+#product-info div[itemprop="description"],
 #cms_page {
   a:not([href]) {
     &,
@@ -7,6 +13,15 @@
       color: inherit;
       text-decoration: none;
     }
+  }
+
+  a.button {
+    background: $primary-button-background;
+    border-radius: 4px;
+    color: $primary-button-color;
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.7rem 1rem;
   }
 
   h2 {
@@ -28,7 +43,7 @@
   }
 
   table {
-    border-color: rgba(black, 0.24);
+    border: solid 1px rgba(black, 0.24);
     margin: 0 0 10px;
     
     thead {

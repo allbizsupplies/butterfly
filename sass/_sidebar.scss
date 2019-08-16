@@ -1,5 +1,9 @@
+
+$sidebar-background: #f6f6f6;
+$sidebar-color: $default-color;
 $sidebar-hover-background: $allbiz-yellow;
-$sidebar-hover-color: black;
+$sidebar-hover-color: $default-color;
+
 
 #sidebar-left {
   @media screen and (max-width: 768px) {
@@ -9,39 +13,61 @@ $sidebar-hover-color: black;
 }
 
 #verticalmenu_sidebar {
+  background: $sidebar-background;
+  color: $sidebar-color;
+
   .panel-heading {
     display: none;
   }
 
+  a {
+    color:inherit;
+  }
+
   @media screen and (max-width: 768px) {
     color: $navbar-color;
-    background-color: transparent;
+    background-color: $navbar-background;
   }
 }
 
 
 #cssmenu {
   > ul { 
-    li a {
-      background-color: transparent;
-      letter-spacing: 1px;
-      font-weight: normal;
+    li {
+      ul {
+        background: $allbiz-yellow;
+      
+        a:hover {
+          background: adjust-color(
+            $allbiz-yellow,
+            $lightness: -3%
+          );
+          color: black;
+          text-shadow: none;
+        }
+      }
+      
+      a {
+        background-color: transparent;
+        letter-spacing: 1px;
+        font-weight: normal;
+  
+        &:hover {
+          color: $sidebar-hover-color;
+          background: none $sidebar-hover-background;
+        }
+      }
 
-      &:hover {
+      & a:hover,
+      &:hover a {
         color: $sidebar-hover-color;
         background: none $sidebar-hover-background;
       }
     }
 
-    li a:hover,
-    li:hover a {
-      color: $sidebar-hover-color;
-      background: none $sidebar-hover-background;
-    }
-
-    > li > ul {
-      color: $sidebar-hover-color;
-      background: none $sidebar-hover-background;
-    }
+    // > li > ul {
+    //   color: $sidebar-hover-color;
+    //   background: none $sidebar-hover-background;
+    // }
   }
 }

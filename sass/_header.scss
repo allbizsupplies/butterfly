@@ -1,6 +1,6 @@
 
-$navbar-background: $allbiz-blue-grey;
-$navbar-color: white;
+$navbar-background: white;
+$navbar-color: $default-color;
 
 .top-links {
   a {
@@ -17,14 +17,15 @@ $navbar-color: white;
 }
 
 .navbar-default {
+
   .navbar-text {
-    color: white;
     margin: 0;
   } 
 
   &.top-header {
-    background: $navbar-background;
+    background: transparent;
     border-radius: 0;
+    z-index: 1002;
 
     @media screen and (max-width: 768px) {
       display: none;
@@ -62,6 +63,7 @@ $navbar-color: white;
     color: $navbar-color;
     border-width: 0;
     border-radius: 0;
+    box-shadow: 0 2px 2px rgba(black, 0.10);
     padding: 0;
     z-index: 1001 !important;
 
@@ -76,7 +78,9 @@ $navbar-color: white;
           }
 
           span {
+            font-size: inherit;
             padding: 13px 10px 15px 10px;
+            text-transform: inherit;
           }
 
           i.fa {

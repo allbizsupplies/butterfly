@@ -1,4 +1,5 @@
 
+// Remove this once Wink has deleted the product images from the descriptions.
 #product-info {
   div[itemprop="description"] {
     img {
@@ -7,9 +8,9 @@
   }
 }
 
-// Pverride an override in theme.css
+// Override an override in theme.css
 .active {
   a:not(.pull-right) {
-    color: #d4027f;
+    color: $primary-color;
   }
 }

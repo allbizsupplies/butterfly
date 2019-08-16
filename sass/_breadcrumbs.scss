@@ -1,0 +1,43 @@
+
+.breadcrumb {
+  padding: 8px 0;
+  
+  li {
+    display: inline-block;
+    float: none;
+
+    span {
+      background: none;
+      display: inline-block;
+      padding: 0;
+
+      &:before {
+        display: none;
+      }
+
+      &:after {
+        border: none;
+        content: '\2023';
+        display: inline-block;
+        margin: 0 0.75em;
+        padding: 0;
+        position: static;
+      }
+    }
+
+    &.active {
+      span {
+        background: none;
+        color: $default-text-color;
+      }
+    }
+
+    &:first-child,
+    &:last-child {
+      span {
+        padding: 0;
+      }
+    }
+  }
+}
+

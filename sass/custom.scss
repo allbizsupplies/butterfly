@@ -1,25 +1,48 @@
 
-$allbiz-yellow:   #FFD400;
-$allbiz-blue:     #0075BF;
-$allbiz-red:      #E31F28;
-$allbiz-black:    #000000;
-$allbiz-silver:   #e0e4ee;
-$allbiz-mdgrey:   #5d5f6b;
-$allbiz-dkgrey:   rgb(57, 57, 61);
-$allbiz-charcoal: #1a1a1a;
+$allbiz-yellow:    #FFD400;
+$allbiz-blue:      #0075BF;
+$allbiz-red:       #E31F28;
+$allbiz-black:     #000000;
+$allbiz-silver:    #e0e4ee;
+$allbiz-mdgrey:    #5d5f6b;
+$allbiz-dkgrey:    rgb(57, 57, 61);
+$allbiz-charcoal:  #1a1a1a;
 $allbiz-blue-grey: #1e282f;
 
 $oc-red:    rgb(218, 41,  28);
 $oc-yellow: rgb(246, 190, 0);
 $oc-black:  rgb(35,  31,  32);
 
-$primary-color: #d4027f;
+
+$primary-color: $allbiz-blue;
+
+
+$default-background: white;
+$default-color: #2b2b2b;
+
+$default-button-background: $allbiz-yellow;
+$default-button-color: black;
+
+$default-link-color: #666666; // unused
+$default-link-hover-color: $primary-color;
+
+$default-text-color: #444444;
+
+
+$primary-button-background: $primary-color;
+$primary-button-color: white;
+
 
 @import 
   "base",
   "header",
   "sidebar",
+  "breadcrumbs",
   "main-content",
+  "form",
+  "panel",
   "templatelist",
+  "product-box",
+  "price-calculator",
   "badge",
   "hacks";
