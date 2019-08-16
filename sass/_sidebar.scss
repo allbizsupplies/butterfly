@@ -30,6 +30,22 @@ $sidebar-hover-color: $default-color;
   }
 }
 
+#cssmenu > ul > li ul {
+	background-image: -webkit-gradient(linear, left 0%, left 100%, from(#00a4db), to(#007acc));
+	background-image: -webkit-linear-gradient(top, #00a4db, 0%, #007acc, 100%);
+	background-image: -moz-linear-gradient(top, #00a4db 0%, #007acc 100%);
+	background-image: linear-gradient(to bottom, #00a4db 0%, #007acc 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00a4db', endColorstr='#ff007acc', GradientType=0);
+	border-color: #007acc #007acc #004c80;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	*background-color: #007acc;
+	opacity: 0;
+   transition: opacity 1s ease-out;
+   -moz-transition: opacity 1s ease-out;
+   -webkit-transition: opacity 1s ease-out;
+	}
+
 
 #cssmenu {
   > ul { 
@@ -65,9 +81,10 @@ $sidebar-hover-color: $default-color;
       }
     }
 
-    // > li > ul {
-    //   color: $sidebar-hover-color;
-    //   background: none $sidebar-hover-background;
-    // }
+    > li {
+      ul {
+        transition-duration: 0.3s;
+      }
+    } 
   }
 }
