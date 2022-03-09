@@ -211,13 +211,17 @@ h1, h2, h3, h4, h5, h6 {
 .body-container {
   margin-top: 30px; }
 
-#product-info div[itemprop="description"] a:not([href]), #product-info div[itemprop="description"] a:not([href]):hover, #product-info div[itemprop="description"] a:not([href]):focus,
+#pro-disc a:not([href]), #pro-disc a:not([href]):hover, #pro-disc a:not([href]):focus,
+#product-info div[itemprop="description"] a:not([href]),
+#product-info div[itemprop="description"] a:not([href]):hover,
+#product-info div[itemprop="description"] a:not([href]):focus,
 #cms_page a:not([href]),
 #cms_page a:not([href]):hover,
 #cms_page a:not([href]):focus {
   color: inherit;
   text-decoration: none; }
 
+#pro-disc a.button,
 #product-info div[itemprop="description"] a.button,
 #cms_page a.button {
   background: #0075BF;
@@ -227,41 +231,60 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1rem 0;
   padding: 0.7rem 1rem; }
 
+#pro-disc h2,
 #product-info div[itemprop="description"] h2,
 #cms_page h2 {
   margin-top: 30px; }
+  #pro-disc h2 span + a,
   #product-info div[itemprop="description"] h2 span + a,
   #cms_page h2 span + a {
     font-size: 50%;
     margin-left: 1em;
     text-transform: uppercase; }
 
+#pro-disc h3,
 #product-info div[itemprop="description"] h3,
 #cms_page h3 {
   margin-top: 20px; }
 
+#pro-disc h4,
 #product-info div[itemprop="description"] h4,
 #cms_page h4 {
   margin-top: 20px; }
 
+#pro-disc table,
 #product-info div[itemprop="description"] table,
 #cms_page table {
   border: solid 1px rgba(0, 0, 0, 0.24);
-  margin: 0 0 10px; }
+  margin: 0 0 10px;
+  max-width: 100% !important; }
+  #pro-disc table thead th,
   #product-info div[itemprop="description"] table thead th,
   #cms_page table thead th {
     text-align: center; }
+  #pro-disc table tbody tr:nth-child(odd),
   #product-info div[itemprop="description"] table tbody tr:nth-child(odd),
   #cms_page table tbody tr:nth-child(odd) {
     background: rgba(0, 0, 0, 0.06); }
+  #pro-disc table tbody td,
   #product-info div[itemprop="description"] table tbody td,
   #cms_page table tbody td {
     text-align: center; }
-  #product-info div[itemprop="description"] table th, #product-info div[itemprop="description"] table td,
+  #pro-disc table th,
+  #pro-disc table td,
+  #product-info div[itemprop="description"] table th,
+  #product-info div[itemprop="description"] table td,
   #cms_page table th,
   #cms_page table td {
     border: none;
     padding: 0.5em 1em; }
+    #pro-disc table th p,
+    #pro-disc table td p,
+    #product-info div[itemprop="description"] table th p,
+    #product-info div[itemprop="description"] table td p,
+    #cms_page table th p,
+    #cms_page table td p {
+      margin-bottom: 0; }
 
 form .btn {
   border: none;
